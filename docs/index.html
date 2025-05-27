@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nerfies-style Paper Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header id="hero">
+    <video src="assets/teaser.mp4" autoplay loop muted playsinline></video>
+    <h1>Neural Radiance Fields for Dynamic Scenes</h1>
+    <p class="subtitle">SIGGRAPH Asia 2021 · Park et al.</p>
+  </header>
+
+  <!-- Abstract Section -->
+  <section id="abstract">
+    <h2>Abstract</h2>
+    <p>
+      We present Nerfies, a method for modeling dynamic scenes using neural radiance fields.
+      Our method reconstructs both geometry and appearance over time, enabling novel-view synthesis of dynamic subjects.
+      We achieve this by learning a scene representation that includes time as an input and propose a deformation network to model motion.
+    </p>
+  </section>
+
+  <!-- Results Section -->
+  <section id="results">
+    <h2>Qualitative Results</h2>
+    <div class="grid">
+      <figure>
+        <img src="assets/results/scene1.gif" />
+        <figcaption>Scene 1: Dynamic head turn</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/results/scene2.gif" />
+        <figcaption>Scene 2: Dance motion</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Demo Section (optional) -->
+  <section id="demo">
+    <h2>Interactive Demo</h2>
+    <canvas id="viewer"></canvas>
+  </section>
+
+  <!-- BibTeX + Links -->
+  <section id="resources">
+    <h2>BibTeX</h2>
+    <pre>
+@inproceedings{park2021nerfies,
+  title={Nerfies: Deformable Neural Radiance Fields},
+  author={Park, Keunhong and Sinha, Utkarsh and others},
+  booktitle={SIGGRAPH Asia},
+  year={2021}
+}
+    </pre>
+    <p>
+      <a href="https://arxiv.org/abs/2011.12948">[Paper]</a> ·
+      <a href="https://github.com/google/nerfies">[Code]</a>
+    </p>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
