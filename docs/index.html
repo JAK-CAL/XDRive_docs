@@ -15,15 +15,32 @@
   </header>
 
   <!-- Abstract Section -->
+<!-- Abstract Section -->
   <section id="abstract">
     <h2>Abstract</h2>
     <p>
-      We introduce <strong>HDRFlow++</strong>, a real-time HDR video reconstruction model designed to handle global motions by incorporating a pretrained RAFT-based feature extractor as a structural prior. 
-      To enable training and evaluation under large-scale scene changes, we also present <strong>XDRive</strong>, a synthetic 3D HDR benchmark with multimodal ground truth—encompassing HDR frames, depth, optical flow, and camera poses.
+      Real-time HDR video reconstruction remains challenging under large-scale camera and object motion,
+      primarily due to misalignment across multi-exposure frames and the lack of motion-aware fusion strategies.
+      Existing methods, such as HDRFlow and DeepHDRVideo, suffer from degraded reconstruction quality in dynamic environments
+      and are often trained on limited datasets with minimal motion diversity.
     </p>
     <p>
-      Our framework supports joint training for <strong>HDR imaging</strong> and <strong>3D perception tasks</strong> such as monocular depth estimation.
-      We show that models trained with XDRive exhibit superior robustness to camera and object motion, outperforming existing HDR reconstruction pipelines across various motion magnitudes.
+      We propose <strong>HDRFlow++</strong>, a motion-robust HDR reconstruction framework that integrates a pretrained RAFT-based feature extractor 
+      as a structural prior to guide feature-level alignment and fusion. By leveraging high-quality optical flow in the feature space, 
+      our model enhances spatial consistency under severe global motion while maintaining real-time performance.
+    </p>
+    <p>
+      To support training and evaluation, we introduce <strong>XDRive</strong>, a large-scale synthetic 3D HDR benchmark built with CARLA. 
+      XDRive provides multimodal ground truth—including HDR frames, aligned multi-exposure LDRs, optical flow, depth maps, and camera poses—
+      captured under diverse lighting and motion conditions. This dataset enables joint optimization for HDR imaging and 3D vision tasks such as monocular depth estimation.
+    </p>
+    <p>
+      Experiments show that <strong>HDRFlow++</strong>, trained with XDRive, achieves up to +2.1 dB improvement in PSNR<sub>T</sub> and consistently better SSIM<sub>T</sub> 
+      across local, ego, and global motion scenarios. Additionally, HDR-enhanced inputs improve downstream depth estimation accuracy over standard LDR-based pipelines.
+    </p>
+    <p>
+      Our work bridges HDR reconstruction and 3D perception by introducing a unified training benchmark and a motion-aware fusion model, 
+      paving the way for future differentiable visual computing frameworks in dynamic, high-dynamic-range scenes.
     </p>
   </section>
 
