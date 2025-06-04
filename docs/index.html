@@ -21,7 +21,7 @@
     <p>
       Real-time HDR video reconstruction remains challenging under large-scale camera and object motion,
       primarily due to misalignment across multi-exposure frames and the lack of motion-aware fusion strategies.
-      Existing methods, such as HDRFlow and DeepHDRVideo, suffer from degraded reconstruction quality in dynamic environments
+      Existing methods suffer from degraded reconstruction quality in dynamic environments
       and are often trained on limited datasets with minimal motion diversity.
     </p>
     <p>
@@ -31,8 +31,7 @@
     </p>
     <p>
       To support training and evaluation, we introduce <strong>XDRive</strong>, a large-scale synthetic 3D HDR benchmark built with CARLA. 
-      XDRive provides multimodal ground truth—including HDR frames, aligned multi-exposure LDRs, optical flow, depth maps, and camera poses—
-      captured under diverse lighting and motion conditions. This dataset enables joint optimization for HDR imaging and 3D vision tasks such as monocular depth estimation.
+      XDRive provides multimodal ground truth, including HDR frames, aligned multi-exposure LDRs, optical flow, depth maps, and camera poses, captured under diverse lighting and motion conditions. This dataset enables joint optimization for HDR imaging and 3D vision tasks such as monocular depth estimation.
     </p>
     <p>
       Experiments show that <strong>HDRFlow++</strong>, trained with XDRive, achieves up to +2.1 dB improvement in PSNR<sub>T</sub> and consistently better SSIM<sub>T</sub> 
