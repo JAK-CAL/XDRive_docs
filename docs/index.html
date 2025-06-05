@@ -101,10 +101,23 @@
 
   <!-- Demo Section -->
   <section id="demo">
-    <h2>Interactive Demo</h2>
+    <h2>Interactive Demo (Finetuned HDRFlow++)</h2>
     <canvas id="viewer"></canvas>
-    <p class="note">Monocular depth estimation (UniDepthV2) improves using reconsturcted HDR input</p>
+    <p class="note">HDR video reconstruction result using <strong>HDRFlow++</strong>. Feature-guided fusion improves alignment under global motion.</p>
   </section>
+
+
+
+  <section id="perception-demo">
+  <h2>3D Perception Demo: Monocular Depth Estimation</h2>
+  <figure class="perception-figure">
+    <img src="https://github.com/user-attachments/assets/f97edb86-5c30-42b5-ad4b-64f74692e88f"
+         alt="Monocular depth estimation using HDR input" />
+    <figcaption>
+      <strong>Figure 5:</strong> The proposed 3D HDR dataset provides ground truth depth data. Inference using reconstructed HDR images showed clear improvements in depth estimation accuracy. It opens up possibilities for future differentiable computational imaging algorithms.
+    </figcaption>
+  </figure>
+</section>
 
   <!-- BibTeX + Links -->
   <section id="resources">
