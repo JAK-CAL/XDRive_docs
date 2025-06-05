@@ -66,7 +66,7 @@
 
 
   <!-- Demo Section -->
-   <section id="benchmark">
+  <section id="benchmark">
     <h2>3D HDR Imaging Benchmark Design</h2>
     <figure class="benchmark-figure">
       <img src="https://github.com/user-attachments/assets/17d71601-ced5-4589-96aa-a7e10a2e2d7e" 
@@ -78,17 +78,23 @@
   </section>
   
 
-  <!-- Results Section -->
   <section id="results">
     <h2>Qualitative Results</h2>
     <div class="grid">
       <figure>
-        <img src="assets/results/global_motion.gif" />
-        <figcaption>Scene 1: HDR reconstruction under global motion (Vanilla HDRFlow)</figcaption>
+        <img src="https://github.com/user-attachments/assets/79b0cdc7-b99f-478d-9827-0d945f54801d"
+             alt="Baseline HDRFlow result under global motion" />
+        <figcaption>
+          Scene 1: HDR reconstruction result under global motion using <strong>Vanilla HDRFlow</strong>. Ghosting artifacts are clearly visible.
+        </figcaption>
       </figure>
+      
       <figure>
-        <img src="assets/results/depth_estimation.gif" />
-        <figcaption>Scene 2: HDR reconstruction under global motion (Fine-tuned HDRFlow++)</figcaption>
+        <img src="https://github.com/user-attachments/assets/c1686541-f02b-4998-b546-0d8b9879348a"
+             alt="HDRFlow++ result under global motion" />
+        <figcaption>
+          Scene 2: HDR reconstruction result using <strong>HDRFlow++</strong>. Feature-guided fusion improves alignment under global motion.
+        </figcaption>
       </figure>
     </div>
   </section>
