@@ -99,26 +99,29 @@
     </div>
   </section>
 
-  <!-- Demo Section -->
   <section id="demo">
-    <h2>Interactive Demo: Finetuned HDRFlow++</h2>
+    <h2>Interactive Demo: Finetuned HDRFlow++/h2>
     <div class="grid">
       <figure>
-        <img src="assets/results/alternating_exposure.gif"
-             alt="Alternating exposure LDR input frames" />
+        <img src="https://github.com/user-attachments/assets/544ed507-f8ac-4cd2-84b6-fb860d9514a8"
+             alt="Alternating exposure input frames (LDR)" />
         <figcaption>
-          Input: Alternating exposure input frames (LDR). 
+          <strong>Input:</strong> Alternating exposure input frames (LDR). 
         </figcaption>
       </figure>
   
       <figure>
-        <img src="assets/results/reconstructed_hdr.gif"
-             alt="Reconstructed HDR frames using HDRFlow++" />
+        <img src="https://github.com/user-attachments/assets/a44c18bf-924e-4610-8321-5f5a68d19dc0"
+             alt="HDRFlow++ reconstructed HDR output frames" />
         <figcaption>
-          Output: Reconstructed HDR video using <strong>HDRFlow++</strong> that preserves detail and temporal consistency.
+          <strong>Output:</strong> Reconstructed HDR frames using <strong>finetuned HDRFlow++</strong>. Feature-guided alignment improves temporal consistency and reduces ghosting.
         </figcaption>
       </figure>
     </div>
+  
+    <p class="note">
+      Our model integrates optical flow priors to align alternating exposure inputs at the feature level, enabling real-time HDR reconstruction under challenging global motion.
+    </p>
   </section>
 
 
